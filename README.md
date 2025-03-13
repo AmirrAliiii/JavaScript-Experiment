@@ -1,24 +1,24 @@
 # Learning Experiment Game
 
-
 ## About
------------
+
+---
 
 This game was created as a learning experiment to gain experience with JavaScript.
 
-
-
 ## How to Run
---------------
+
+---
 
 To run this game, follow these steps:
 
 1. Clone the repository to your local machine using `git clone`.
 2. Navigate to the repository directory using `cd`.
-3. Run the game using the command `python main.py` (assuming the game has a `main.py` file).
+3. Run the game using the liver server extention
 
 ## Game Explanation
------------------
+
+---
 
 ### Game Overview
 
