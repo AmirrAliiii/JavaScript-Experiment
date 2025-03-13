@@ -72,15 +72,13 @@ ShowResultBtn.addEventListener("click", () => {
   );
 
   if (player1Attempts > player2Attempts) {
-    window.alert(`${player2Name} won`);
-    document.body.style.background = "#00ff00";
-    document.body.style.transition = "background 3s ease-in-out";
+    document.getElementById("div1").style.border = "5px solid #ff0000";
+    document.getElementById("div1").style.transition = "border 3s ease-in-out";
   } else {
-    window.alert(`${player1Name} won`);
-    document.body.style.background = "#ff0000";
-    document.body.style.transition = "background 3s ease-in-out";
+    document.getElementById("div1").style.border = "5px solid #00ff00";
+    document.getElementById("div1").style.transition = "border 3s ease-in-out";
   }
   setTimeout(() => {
-    document.body.style.background = "#2e2c30";
+    document.getElementById("div1").style.border = "1px solid #eaeaea";
   }, 3000);
 });
