@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Number Guessing Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="div1">
-      <p id="Title">Number guessing game</p>
-      <label id="player1">Player 1 Attemps: </label><br />
-      <label id="player2">Player 2 Attemps: </label><br />
-      <button id="b1" onclick="running = true;">Click me!</button>
-      <button id="ControlBtn">Show Result</button>
-      <label id="result"></label>
+      <h1 id="Title">Number Guessing Game</h1>
+      <div id="PlyerDiv">
+        <label id="player1">Player 1 Attempts: </label><br />
+        <label id="player2">Player 2 Attempts: </label><br />
+      </div>
+      <div id="ButtonDiv">
+        <button id="b1" class="btn">Start Game</button>
+        <button id="ControlBtn" class="btn">Show Result</button>
+        <button id="AssignNameBtn" class="btn">Assign Names</button>
+      </div>
     </div>
+    <script src="index.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>

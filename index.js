@@ -1,12 +1,24 @@
 const min = 1;
 const max = 100;
 let running = false;
-
+let player1Name = "Player 1";
+let player2Name = "Player 2";
 let WhosTurn = 1;
-let player1LineContent = "Player 1 Attemps: ";
-let player2LineContent = "Player 2 Attemps: ";
+let player1LineContent = `${player1Name} Attemps: `;
+let player2LineContent = `${player2Name} Attemps: `;
 let player1Attempts = 0;
 let player2Attempts = 0;
+
+const AssignNameBtn = document.getElementById("AssignNameBtn");
+AssignNameBtn.addEventListener("click", () => {
+  player1Name = window.prompt("Enter Player 1 Name");
+  player1LineContent = `${player1Name} Attemps: `;
+  document.getElementById("player1").textContent = player1LineContent;
+  player2Name = window.prompt("Enter Player 2 Name");
+  player2LineContent = `${player2Name} Attemps: `;
+  document.getElementById("player2").textContent = player2LineContent;
+});
+
 const StartBtn = document.getElementById("b1");
 StartBtn.addEventListener("click", () => {
   running = true;
@@ -59,9 +71,19 @@ StartBtn.addEventListener("click", () => {
 const ShowResultBtn = document.getElementById("ControlBtn");
 ShowResultBtn.addEventListener("click", () => {
   window.alert(
-    `Player 1 Attempts: ${player1Attempts} \n Player 2 Attempts: ${player2Attempts}`
+    `${player1Name} Attempts: ${player1Attempts} \n ${player2Name} Attempts: ${player2Attempts}`
   );
-  player1Attempts > player2Attempts
-    ? window.alert("Player 2 won")
-    : window.alert("Player 1 won");
+
+  if (player1Attempts > player2Attempts) {
+    window.alert(`${player2Name} won`);
+    document.body.style.background = "#00ff00";
+    document.body.style.transition = "background 3s ease-in-out";
+  } else {
+    window.alert(`${player1Name} won`);
+    document.body.style.background = "#ff0000";
+    document.body.style.transition = "background 3s ease-in-out";
+  }
+  setTimeout(() => {
+    document.body.style.background = "#2e2c30";
+  }, 3000);
 });

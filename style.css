@@ -1,3 +1,75 @@
-#body {
-  background-color: rgb(242, 60, 60);
+body {
+  background-color: #2e2c30; /* light gray background */
+  font-family: helvetica;
+  color: #eaeaea;
+}
+
+#div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 100px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+
+#Title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border-radius: 7px;
+  background-color: #e3474a;
+  color: #d8d5d5;
+  display: block;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    padding 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #d8d5d5;
+  color: #e3474a;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+#ButtonDiv {
+  margin: 50px;
+}
+#Title {
+  background: linear-gradient(to right, #e3474a, #d0b9b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: gradient 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 30px #e3474a;
+  }
+  100% {
+    text-shadow: 0 0 15px #e3474a;
+  }
+}
+#PlyerDiv {
+  font-size: 20px;
+  margin: 20px auto;
 }
