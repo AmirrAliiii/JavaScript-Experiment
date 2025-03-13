@@ -26,11 +26,10 @@ StartBtn.addEventListener("click", () => {
   let attempts = 0;
   const random = Math.floor(Math.random() * (max - min + 1) + min);
   let guess;
+  console.log(`The Number is ${random}`);
 
   while (running) {
-    guess = window.prompt(
-      `Guess a number between ${min} and ${max} the anwer ${random}`
-    );
+    guess = window.prompt(`Guess a number between ${min} and ${max}`);
     guess = Number(guess);
 
     if (isNaN(guess)) {
@@ -63,8 +62,6 @@ StartBtn.addEventListener("click", () => {
         // or WhosTurn = 3 - WhosTurn;
       }
     }
-    console.log(player1Attempts);
-    console.log(player2Attempts);
   }
 });
 
