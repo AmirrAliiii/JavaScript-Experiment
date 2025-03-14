@@ -81,4 +81,8 @@ ShowResultBtn.addEventListener("click", () => {
   setTimeout(() => {
     document.getElementById("div1").style.border = "1px solid #eaeaea";
   }, 3000);
+
+  player1Attempts > player2Attempts
+    ? window.alert(`${player2Name} won`)
+    : window.alert(`${player1Name} won`);
 });
