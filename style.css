@@ -2,17 +2,25 @@ body {
   background-color: #2e2c30;
   font-family: helvetica;
   color: #eaeaea;
+  margin: 50px auto;
 }
 
 #div1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
-  margin: 0 auto;
-  padding: 100px;
+  width: 40%;
+  margin: auto auto;
+  padding: 50px;
   border: 1px solid #eaeaea;
   border-radius: 10px;
+}
+#PlyerDiv {
+  margin: 50px;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+  background-color: #38353a;
 }
 
 #Title {
@@ -22,6 +30,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   background-size: 200% 100%;
+  padding-bottom: 60px;
   animation: gradient 2s ease-in-out infinite alternate,
     glow 2s ease-in-out infinite alternate;
 }
@@ -29,13 +38,16 @@ body {
 .btn {
   font-weight: bold;
   margin: 20px auto;
-  padding: 10px 15px;
+  padding: 15px 25px;
   border-radius: 7px;
+  align-items: center;
+  font-size: 1.1em;
   background-color: #e3474a;
   color: #d8d5d5;
   display: block;
   cursor: pointer;
   border: none;
+  box-shadow: #ff0004 0px 0px 15px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     padding 0.3s ease-in-out;
 }
