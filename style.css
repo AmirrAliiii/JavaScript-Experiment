@@ -14,6 +14,7 @@ body {
   padding: 50px;
   border: 1px solid #eaeaea;
   border-radius: 10px;
+  box-shadow: #d0b9b91e 0px 0px 25px;
 }
 #PlyerDiv {
   margin: 50px;
@@ -21,6 +22,11 @@ body {
   padding: 30px;
   text-align: left;
   background-color: #38353a;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#PlyerDiv:hover {
+  box-shadow: #ff000442 0px 0px 25px;
+  cursor: crosshair;
 }
 
 #Title {
@@ -49,14 +55,16 @@ body {
   border: none;
   box-shadow: #ff0004 0px 0px 15px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
-    padding 0.3s ease-in-out;
+    padding 0.3s ease-in-out, font-size 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: #d8d5d5;
   color: #e3474a;
-  padding: 7px 13px;
+  padding: 10px 20px;
   border-radius: 10px;
+  font-size: 1.3em;
   text-shadow: 0 0 10px #ff0004;
   animation: glow 0.3s ease-in-out infinite alternate;
 }
